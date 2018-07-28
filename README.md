@@ -13,6 +13,9 @@ this PCB design. Your mileage may vary. However, if you would like to give it a
 try, either clone the repo and load the project into KiCad or download the
 Gerber files attached to one of the
 [tagged revisions](https://github.com/apparentlymart/raspi-jtag-hat/releases).
+Before spending any time and money, please consider checking for any
+[open issues](https://github.com/apparentlymart/raspi-jtag-hat/issues), and
+for any _closed_ issues that apply to the tagged revision you are working with.
 
 The board also includes extra breakouts for the I2C pins and the power pins
 from the main header, as an optional convenience. It might also work for
