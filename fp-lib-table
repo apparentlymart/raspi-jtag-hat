@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name RasPi_JTAG_HAT)(type KiCad)(uri $KIPRJMOD/RasPi_JTAG_HAT.pretty)(options "")(descr ""))
+)
