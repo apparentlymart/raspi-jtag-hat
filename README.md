@@ -29,3 +29,4 @@ be used to populate this PCB:
 | P3   | "ARM-style" JTAG socket         | [htst-110-01-l-d-samtec-6823793](https://octopart.com/htst-110-01-l-d-samtec-6823793)                     |
 | P4   | Misc. Power header              | [10-89-7082-molex-20831](https://octopart.com/10-89-7082-molex-20831)                                     |
 | P5   | I2C header                      | [10-89-7042-molex-35512](https://octopart.com/10-89-7042-molex-35512)                                     |
+| n/a  | Board Spacer (optional)         | [mdlsp3-6-01-essentra-33826524](https://octopart.com/mdlsp3-6-01-essentra-33826524)                       |
