@@ -591,7 +591,7 @@
   (gr_text GND (at 49.5 13.25) (layer F.SilkS)
     (effects (font (size 0.5 0.5) (thickness 0.125)) (justify right))
   )
-  (gr_text "Rev. A" (at 52 35 90) (layer F.SilkS)
+  (gr_text "Rev. B" (at 52 35 90) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text "Raspberry Pi 3\nBare Metal Dev HAT" (at 46 9) (layer F.SilkS)
