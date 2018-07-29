@@ -6,7 +6,7 @@
 
 all: dist
 
-dist: dist/gerbers.zip dist/bootfs.zip
+dist: dist/gerbers.zip dist/bootfs.zip dist/preview.png
 
 gerbers: raspi-jtag-hat.kicad_pcb
 	python gerbers.py $<
@@ -27,4 +27,31 @@ clean:
 	rm -rf gerbers
 	cd boot && make clean
 
-.PHONY: all dist gerbers bootfs clean
+gerbv: gerbers
+	gerbv \
+		gerbers/raspi-jtag-hat-EdgeCuts.gm1 \
+		gerbers/raspi-jtag-hat.drl \
+		gerbers/raspi-jtag-hat-SilkTop.gto \
+		gerbers/raspi-jtag-hat-MaskTop.gts \
+		gerbers/raspi-jtag-hat-CuTop.gtl \
+		gerbers/raspi-jtag-hat-CuBottom.gbl \
+		gerbers/raspi-jtag-hat-MaskBottom.gbs \
+		gerbers/raspi-jtag-hat-SilkBottom.gbo \
+
+dist/preview.png: gerbers
+	gerbv \
+		-o $@ \
+		--export=png --antialias -D 500 \
+		-f \#000000ff \
+		-f \#000000ff \
+		-f \#ffffffff \
+		-f \#b87333ff \
+		-f \#3f601eff \
+		-b \#4A7023 \
+		gerbers/raspi-jtag-hat-EdgeCuts.gm1 \
+		gerbers/raspi-jtag-hat.drl \
+		gerbers/raspi-jtag-hat-SilkTop.gto \
+		gerbers/raspi-jtag-hat-MaskTop.gts \
+		gerbers/raspi-jtag-hat-CuTop.gtl
+
+.PHONY: all dist gerbers bootfs clean gerbv
