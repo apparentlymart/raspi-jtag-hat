@@ -1,0 +1,6 @@
+gerbers/*
+dist/*
+*.kicad_pcb-bak
+*.bak
+gerbers.zip
+_saved_*.sch
