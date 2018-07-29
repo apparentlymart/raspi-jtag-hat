@@ -558,7 +558,7 @@
   (gr_text GND (at 49 47) (layer F.SilkS) (tstamp 5B5C15E2)
     (effects (font (size 0.5 0.5) (thickness 0.125)) (justify right))
   )
-  (gr_text 3V (at 49 52.25) (layer F.SilkS) (tstamp 5B5C15BA)
+  (gr_text 3.3V (at 49 52.25) (layer F.SilkS) (tstamp 5B5C15BA)
     (effects (font (size 0.5 0.5) (thickness 0.125)) (justify right))
   )
   (gr_text 5V (at 49 44.5) (layer F.SilkS) (tstamp 5B5C15AA)
